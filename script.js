@@ -19,11 +19,13 @@ inputElement.forEach((input, index) => {
 passwordInput.addEventListener("input", function () {
   confirmInput.addEventListener("input", function () {
     if (passwordInput.value === confirmInput.value) {
-      console.log("Yes");
+      passwordInput.style.outline = "#007361 2px solid";
+      confirmInput.style.outline = "#007361 2px solid";
     } else {
       passwordInput.classList.add("no-password");
+      confirmInput.classList.add("no-password");
       passwordInput.style.outline = "none";
-      console.log("No");
+      confirmInput.style.outline = "none";
     }
   });
 });
