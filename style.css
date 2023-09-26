@@ -115,6 +115,9 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 }
+.no-password {
+  border: 1px solid #ff7fa1;
+}
 /* //////// */
 
 .btn-submit {

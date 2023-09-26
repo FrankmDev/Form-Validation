@@ -2,6 +2,8 @@
 
 const inputElement = document.querySelectorAll(".input");
 const inputLabel = document.querySelectorAll(".input-label");
+const passwordInput = document.getElementById("password");
+const confirmInput = document.getElementById("confirm");
 
 inputElement.forEach((input, index) => {
   input.addEventListener("input", function () {
@@ -14,6 +16,14 @@ inputElement.forEach((input, index) => {
   });
 });
 
-if (input.value !== "") {
-  inputLabel[index].classList.add("has-content");
-}
+passwordInput.addEventListener("input", function () {
+  confirmInput.addEventListener("input", function () {
+    if (passwordInput.value === confirmInput.value) {
+      console.log("Yes");
+    } else {
+      passwordInput.classList.add("no-password");
+      passwordInput.style.outline = "none";
+      console.log("No");
+    }
+  });
+});
