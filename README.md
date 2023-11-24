@@ -1,6 +1,6 @@
-<h1>Form-Validation</h1>
+<h1 align=center>Form-Validation</h1>
 <div align="center">
-  <img src="tu-imagen.png" alt="Descripción de la imagen">
+  <img src="https://github.com/FrankmDev/Form-Validation/blob/main/FormValidation.png" alt="Form Validation">
 </div>
 
 # Formulario de Registro con Validación
