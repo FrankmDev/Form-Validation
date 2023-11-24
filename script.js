@@ -21,6 +21,8 @@ passwordInput.addEventListener("input", function () {
     if (passwordInput.value === confirmInput.value) {
       passwordInput.style.outline = "#007361 2px solid";
       confirmInput.style.outline = "#007361 2px solid";
+      passwordInput.classList.remove("no-password");
+      confirmInput.classList.remove("no-password");
     } else {
       passwordInput.classList.add("no-password");
       confirmInput.classList.add("no-password");
